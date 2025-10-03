@@ -1,7 +1,7 @@
 import java.io.*;
 import java.util.*;
 
-public class Main {
+public class Road_Construction {
     static class DSU {
         int[] parent, size;
 
@@ -37,7 +37,6 @@ public class Main {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         StringTokenizer st = new StringTokenizer(br.readLine());
-        StringBuilder sb = new StringBuilder();
 
         int n = Integer.parseInt(st.nextToken());
         int m = Integer.parseInt(st.nextToken());
@@ -57,8 +56,7 @@ public class Main {
                 maxSize = Math.max(maxSize, dsu.size[root]);
             }
 
-            sb.append(components).append(" ").append(maxSize).append("\n");
+            System.out.println(components + " " + maxSize);
         }
-        System.out.print(sb);
     }
 }
