@@ -1,7 +1,9 @@
-import java.io.*;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 import java.util.*;
 
-public class Main {
+public class Planets_And_Kingdoms {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         StringTokenizer str = new StringTokenizer(br.readLine());
@@ -52,12 +54,9 @@ public class Main {
         }
 
         System.out.println(scc);
-        StringBuilder sb = new StringBuilder();
         for(int i=1;i<=n;i++){
-            sb.append(comp[i]);
-            sb.append(" ");
+            System.out.print(comp[i] + " ");
         }
-        System.out.println(sb.toString());
 
     }
 
